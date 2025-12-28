@@ -1,4 +1,6 @@
 **AI-Powered Email Audio to CRM Automation**
+
+
 This  project focuses on automating the process of extracting valuable customer information from audio files received via email and updating this information directly into a CRM system (HubSpot). The goal is to reduce manual data entry, improve data accuracy, and save time for sales and consulting teams.
 
 **Problem Statement**
