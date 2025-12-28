@@ -32,6 +32,7 @@ The extracted data is mapped to HubSpot contact properties such as Job Title, Na
 
 
 **System Architecture**
+
 Email with Audio
        ↓
 Gmail API
