@@ -50,7 +50,7 @@ HubSpot CRM Update
 Audio Uploaded to Contact Attachments
 
 **Step-by-Step Workflow**
-Step 1:Email Detection
+**Step 1:Email Detection**
 
 The system connects to Gmail using OAuth
 
@@ -59,13 +59,13 @@ Searches for emails containing audio attachments (.mp3, .wav, .m4a, .mp4)
 User can specify a target email address to process
 
 
-Step 2: Audio Download
+**Step 2: Audio Download**
 
 Audio files are downloaded locally
 
 Sender or subject email is extracted for CRM matching
 
-Step 3: Speech-to-Text (Whisper)
+**Step 3: Speech-to-Text (Whisper)**
 
 Audio files are transcribed using OpenAI Whisper
 
@@ -73,7 +73,7 @@ Works fully offline after model download
 
 Supports multiple languages (English & German)
 
-Step 4: AI-Based Information Extraction
+**Step 4: AI-Based Information Extraction**
 
 Using GPT, the transcript is analyzed to extract:
 
@@ -93,7 +93,7 @@ Address
 
 The AI returns clean JSON, ensuring structured output.
 
-Step 5: Data Normalization & Validation
+**Step 5: Data Normalization & Validation**
 
 To match HubSpot requirements:
 
@@ -103,7 +103,7 @@ Boolean fields like expat are normalized (true / false)
 
 Lead status values are mapped to valid CRM pipeline values
 
-Step 6: HubSpot CRM Update
+**Step 6: HubSpot CRM Update**
 
 Contact is found using email
 
@@ -111,7 +111,7 @@ CRM properties are updated via HubSpot API
 
 Only valid properties are sent (prevents API errors)
 
-Step 7: Audio Upload to HubSpot Attachments
+**Step 7: Audio Upload to HubSpot Attachments**
 
 Audio file is uploaded to HubSpot File Manager
 
